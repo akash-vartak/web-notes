@@ -11,8 +11,8 @@ body {
 	font-size: 100%;
 	margin: 15px;
 	/*background: #666;*/
-    background-image: url("../images/background.jpg");
-    background-size: cover;
+    background-image: url("../images/background3.gif");
+    background-size: 100%;
 	color: #fff;
 }
 
@@ -55,8 +55,8 @@ ul li div {
 	color: #000;
 	background: #ffc;
 	display: block;
-	height: 170px;
-	width: 170px;
+	height: 220px;
+	width: 200px;
 	padding: 10px;
 	-moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
 	-webkit-box-shadow: 5px 5px 7px  rgba(33, 33, 33, .7);
@@ -76,7 +76,7 @@ ul li div img {
 }
 
 ul li textarea {
-	font-family: 'Indie Flower', cursive;/*"Reenie Beanie",arial,sans-serif;*/
+	font-family: 'arial', cursive;/*"Reenie Beanie",arial,sans-serif;*/
 	background: rgba(255, 255, 255, 0.5); /* transparent background */
 	resize: none;
 	padding: 3px;
@@ -84,15 +84,15 @@ ul li textarea {
 }
 
 .note-title {
-	font-size: 140%;
+	font-size: 80%;
 	font-weight: bold;
 	height: 27px;
 	width: 70%;
 }
 
 .note-content {
-	font-size:120%;
-	height: 170px;
+	font-size:100%;
+	height: 220px;
 	width: 100%;
 }
 
@@ -120,13 +120,13 @@ ul li:nth-child(5n) div {
   top:-10px;
 }
 
-ul li div:hover, ul li div:focus {  
+ul li div:hover, ul li div:focus, ul li div:active {  
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);  
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);  
   box-shadow:10px 10px 7px rgba(0,0,0,.7);  
-  -webkit-transform: scale(1.25);  
-  -moz-transform: scale(1.25);  
-  -o-transform: scale(1.25);  
+  -webkit-transform: scale(1.05);  
+  -moz-transform: scale(1.05);  
+  -o-transform: scale(1.05);
   position:relative;  
   z-index:5;   
 }

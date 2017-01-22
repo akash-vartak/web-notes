@@ -1,6 +1,7 @@
 <html>
 <head>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon1.png"/>
+	
 				
     <link href="http://fonts.googleapis.com/css?family=Chewy:regular" rel="stylesheet" type="text/css"/>
     
@@ -78,13 +79,14 @@
                className = "colour" + Math.ceil(Math.random() * 5) ;
 	       }
             
-            
+            widths = [150, 200, 250, 300, 350];
+			randwidth = widths[Math.floor( Math.random() * widths.length )];
             
 	       // add a new note to the end of the list
-	       notes.append("<li><div id='slide' class='" + className + " slide' >" + 
+	       notes.append("<li><div id='slide' class='" + className + " " + random + "' style='width: " + randwidth + "px;' >" + 
                         //"<textarea class='note-title' placeholder='Untitled' maxlength='100'/>" + 
-                        "<textarea class='note-content' placeholder='Your content here'/>" + 
-                        "<img class='hide' src='images/close2.png'/>" + 
+                        "<textarea class='note-content' placeholder='Your content here' />" + 
+                        "<img class='hide' src='images/close2.png' />" + 
                         "</div></li>");
             
 	       // get the new note that's just been added and attach the click event handler to its close button
@@ -147,7 +149,7 @@
                 $("#btnNew").click();
             }
         });
-        
+		
     </script>
     
 </head>
